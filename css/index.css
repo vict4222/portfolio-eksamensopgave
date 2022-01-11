@@ -1,0 +1,99 @@
+body {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+main {
+  display: revert;
+}
+
+#home_wrapper {
+  display: grid;
+  grid-template-columns: 8px auto minmax(0, 1024px) auto 8px;
+}
+
+#home_wrapper > * {
+  grid-column: 3/4;
+}
+
+h1 {
+  font-size: clamp(4rem, 2rem + 8vw, 6rem);
+  padding-bottom: 1rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: clamp(1.5rem, 0.25rem + 5vw, 2.75rem);
+  text-align: center;
+}
+
+.buttons_row {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 16px;
+  padding: 16px;
+}
+
+#water {
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#wave1 {
+  position: fixed;
+  background-image: url("../resources/wave1.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
+  height: 75%;
+  bottom: 0;
+  overflow: hidden;
+
+  animation-name: wave1_kf;
+  animation-iteration-count: infinite;
+  animation-duration: 13s;
+  animation-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+#wave2 {
+  position: fixed;
+  background-image: url("../resources/wave2.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
+  height: 75%;
+  bottom: 0;
+  overflow: hidden;
+
+  animation-name: wave2_kf;
+  animation-iteration-count: infinite;
+  animation-duration: 7s;
+  animation-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+@keyframes wave1_kf {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(2%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes wave2_kf {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(2.5%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

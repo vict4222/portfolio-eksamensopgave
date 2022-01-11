@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/globalstyle.css" />
+    <link rel="stylesheet" href="../css/portfolio.css" />
+    <meta name="robots" content="noindex" />
+    <title>Temaopgave</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav id="navbar">
+        <a href="../index.html" id="nav_logo">VL</a>
+        <ul id="nav_menu">
+          <li class="nav_item">
+            <a href="../index.html" class="nav_link">Forside</a>
+          </li>
+          <li class="nav_item">
+            <a href="../portfolio.html" class="nav_link">Portfolio</a>
+          </li>
+          <li class="nav_item">
+            <a href="../about.html" class="nav_link">Om mig</a>
+          </li>
+        </ul>
+        <div id="hamburger">
+          <span class="bar_top"></span>
+          <span class="bar_middle"></span>
+          <span class="bar_bottom"></span>
+        </div>
+        <div id="header_blind"></div>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <h1>Temaopgave</h1>
+        <article>
+          <h2>Opgavens fokus</h2>
+          <p>
+            I temaopgaven skulle vi kode et simpelt spil med HTML, CSS og
+            JavaScript, hvor man kan klikke på en god ting og en dårlig ting.
+            Opgavens fokus er at bruge css animationer og javascript til at gøre
+            spillet interaktivt. Alt fra kode til grafik skulle vi selv lave til
+            spillet.
+          </p>
+        </article>
+        <article>
+          <h2>Min rolle</h2>
+          <p>
+            Min rolle var at lære javascript og karakterdesign ved at kode et
+            spil med lidt storytelling.
+          </p>
+        </article>
+        <article>
+          <h2>Hvad jeg lærte</h2>
+          <p>
+            Gennem temaet har jeg lært spiludviklingsprocessen fra lo-fi
+            prototype med paperprototype og sketch af karaktere, til
+            idégenereringsmetoder, til aktivitetsdiagram og statemachinediagram
+            og til kodning af spillet. Jeg lærte at tilføje og fjerne klasser
+            med javascript, javascript funktioner, metoder og hierarkiet af
+            if/else betingelser. I opgaven
+            <a
+              href="https://www.victor-ly.dk/kea/04-animation/16-animationer"
+              target="_blank"
+              >16-animationer</a
+            >
+            har jeg lært at animere med css animationer. Paperprototypen skulle
+            i virkeligheden være lavet med lim, saks og sticky notes for at
+            illustrere konceptet, men jeg havde dem ikke tilgængeligt.
+          </p>
+          <figure>
+            <img src="../resources/skitse-1.webp" alt="javascript kode" />
+            <figcaption>Paperprototype af spillet</figcaption>
+          </figure>
+        </article>
+        <article>
+          <h2>Min løsning</h2>
+          <a
+            href="https://www.victor-ly.dk/kea/04_animation/spil/spil.html"
+            target="_blank"
+            >Link til spillet</a
+          >
+          <p>
+            Jeg har kodet og designet spillet <i>Hungry Lola</i>, som går ud på
+            at du skal fodre katten ved at fange fisk ude på en havn på 60
+            sekunder. Spillet handler om at du ejer en sulten kat, som skal
+            spise en stor mængde fisk, men katten er bange for søpølser og
+            bliver skræmt, hvis man fanger en.
+          </p>
+          <p>
+            I spillet tjener du 2 point for at fange en fisk, men mister et hvis
+            man ikke når at fange fisken. Derudover mister man 5 point og et
+            liv, hvis man fanger en søpølse.
+          </p>
+        </article>
+        <article>
+          <h2>Min proces</h2>
+          <p>
+            I idégenereringsprocessen brugte jeg krydsmetoden, som går ud på at
+            man forbinder et ord sammen fra hvert gruppe af ord (verber,
+            setting, ting). Jeg rentegnede karaktererne i Adobe Illustrator og
+            eksporterede filerne i .svg format. Processen af rentegning kan
+            findes
+            <a href="../resources/process2.pdf" target="_blank">her</a>.
+          </p>
+          <p>
+            Da vi endelig skulle i gang med at kode spillet trin for trin,
+            tilføjede jeg ekstra features i spillet når jeg blev hurtig færdig
+            med opgaverne, for eksempel at vise tiden med tal udover en bar der
+            gradvist blev mindre med css animationer.
+          </p>
+          <figure>
+            <img src="../resources/javascriptkode.JPG" alt="javascript kode" />
+            <figcaption>Javascript funktion af tid</figcaption>
+          </figure>
+          <p>
+            Det gjorde jeg ved at lave en css animation med en
+            animation-iteration på 60 og animation-duration på 1 sekund på en
+            element, hvorpå jeg i min javascript lavede en event listener på
+            animationiteration, der kalder på funktionen i illustrationen
+            ovenover. Variablen <i>timeLeft</i> startes med en værdi på 60, der
+            tæller ned hver gang funktionen bliver kaldt.
+          </p>
+        </article>
+      </section>
+    </main>
+    <script src="../javascript/nav-burger.js"></script>
+  </body>
+</html>

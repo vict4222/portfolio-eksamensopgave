@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/globalstyle.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <meta name="robots" content="noindex" />
+    <title>Forside</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav id="navbar">
+        <a href="index.html" id="nav_logo">VL</a>
+        <ul id="nav_menu">
+          <li class="nav_item">
+            <a href="index.html" class="nav_link">Forside</a>
+          </li>
+          <li class="nav_item">
+            <a href="portfolio.html" class="nav_link">Portfolio</a>
+          </li>
+          <li class="nav_item">
+            <a href="about.html" class="nav_link">Om mig</a>
+          </li>
+        </ul>
+        <div id="hamburger">
+          <span class="bar_top"></span>
+          <span class="bar_middle"></span>
+          <span class="bar_bottom"></span>
+        </div>
+        <div id="header_blind"></div>
+      </nav>
+    </header>
+    <main>
+      <section id="home_wrapper">
+        <div>
+          <h1>Victor Ly</h1>
+          <h2>MMD 1. semester portfolio site</h2>
+        </div>
+        <div class="buttons_container">
+          <div class="buttons_row">
+            <button onclick="window.location.href='portfolio.html';">
+              Se portfolio
+            </button>
+            <button
+              class="border_button"
+              onclick="window.location.href='about.html';"
+            >
+              Om mig
+            </button>
+          </div>
+        </div>
+      </section>
+      <div id="water">
+        <div id="wave1"></div>
+        <div id="wave2"></div>
+      </div>
+    </main>
+    <script src="javascript/nav-burger.js"></script>
+  </body>
+</html>

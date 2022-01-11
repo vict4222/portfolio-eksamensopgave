@@ -1,0 +1,81 @@
+#card_container {
+  margin: 20px 0 80px 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px 24px;
+}
+
+.card {
+  list-style: none;
+  overflow: hidden;
+  aspect-ratio: 5/8;
+  background-color: var(--color-6);
+  border-radius: 16px;
+  display: grid;
+  grid-template-rows: 3fr 5fr;
+  transition: background-color 0.6s, transform 0.6s, box-shadow 0.6s;
+  cursor: pointer;
+  box-shadow: 0px 4px 32px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover {
+  background-color: white;
+  transform: translateY(-6px);
+  box-shadow: 0px 8px 32px 8px rgba(0, 0, 0, 0.6);
+}
+
+.row_top {
+  overflow: hidden;
+}
+
+.row_bottom {
+  padding: 12px;
+}
+
+.card_1 {
+  background: url("../resources/thumbnail_1.webp") center / cover;
+}
+.card_2 {
+  background: url("../resources/thumbnail_2.webp") center / cover;
+}
+.card_3 {
+  background: url("../resources/thumbnail_3.webp") center / cover;
+}
+.card_4 {
+  background: url("../resources/thumbnail_4.webp") center / cover;
+}
+.card_5 {
+  background: url("../resources/thumbnail_5.webp") center / cover;
+}
+.card_6 {
+  background: url("../resources/thumbnail_6.webp") center / cover;
+}
+
+.card_img {
+  background-color: var(--color-3);
+  background-blend-mode: overlay;
+  width: 100%;
+  height: 100%;
+  filter: grayscale(60%);
+  transition: filter 0.6s, transform 0.6s, background-color 0.6s;
+}
+
+.card:hover .card_img {
+  filter: grayscale(0);
+  transform: scale(1.075);
+  background-color: transparent;
+}
+
+article p,
+article ul {
+  max-width: 800px;
+  margin-right: auto;
+}
+
+.link_container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0 2.5rem;
+}
